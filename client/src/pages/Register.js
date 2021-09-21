@@ -30,7 +30,7 @@ function Register() {
     
     return (
         <div className='form-container'>
-            <form onSubmit={onSubmit} noValidate className={loading ? 'loading' : ''}>
+            <Form onSubmit={onSubmit} noValidate className={loading ? 'loading' : ''}>
                 <h1>Register</h1>
                 <Form.Input
                     label="Username:"
@@ -67,7 +67,7 @@ function Register() {
                 <Button type='submit' primary>
                     Register
                 </Button>
-            </form>
+            </Form>
         </div>
     );
 }
@@ -90,6 +90,6 @@ const REGISTER_USER = gql`
             id email username createdAt token
         }
     }
-`
+`;
 
 export default Register;
